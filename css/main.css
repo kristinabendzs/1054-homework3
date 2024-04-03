@@ -1,0 +1,135 @@
+header {
+    color: #62104a;
+    text-align: center;
+    background-color: plum;
+    font-size: 26px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-position: center;
+    display: block;
+    box-shadow: 10px 10px 4px black;
+    border: 4px double #62104a;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+header > h3 {
+    color: #62104a;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+body {
+    background-image: url('../images/loki-cat.png');
+    font-size: 20px;
+    color: rgb(97, 65, 177);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section {
+    margin: 15px;
+    margin-bottom: 50px
+}
+section > h2 {
+    text-align: center;
+}
+
+/*To Do lists styling*/
+#todo {
+    border: 8px solid rgb(172, 94, 179);
+    background-color: rgb(251, 196, 233);
+    width: 300px;
+    box-shadow: 10px 10px 4px black;
+    color: rgb(147, 35, 115);
+}
+
+#in-progress {
+    border: 8px solid cornflowerblue;
+    background-color: rgb(164, 211, 250);
+    width: 300px;
+    box-shadow: 10px 10px 4px black;
+    color: rgb(30, 72, 149);
+}
+
+#completed {
+    border: 8px solid rgb(62, 128, 62);
+    background-color: rgb(164, 225, 169);
+    width: 300px;
+    box-shadow: 10px 10px 4px black;
+    color:  rgb(22, 86, 35);
+}
+
+#todo > h2 {
+    color: rgb(147, 35, 115);
+}
+
+#in-progress > h2 {
+    color: rgb(30, 72, 149);
+}
+
+#completed > h2 {
+    color: rgb(22, 86, 35);
+}
+
+ul {
+    list-style-type: none;
+    padding: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#todo ul li {
+    border: 2px solid rgb(147, 35, 115);
+    padding: 5px;
+}
+
+#todo ul li:nth-child(odd) {
+    background-color: rgb(147, 35, 115);
+    color: #fff;
+}
+
+#in-progress ul li {
+    border: 2px solid rgb(30, 72, 149);
+    padding: 5px;
+}
+
+#in-progress ul li:nth-child(odd) {
+    background-color: rgb(30, 72, 149);
+    color: #fff;
+}
+
+#completed ul li {
+   border: 2px solid rgb(22, 86, 35);
+    padding: 5px;
+}
+
+#completed ul li:nth-child(odd) {
+    background-color:  rgb(22, 86, 35);
+    color: #fff;
+}
+
+/*pseudo-selectors*/
+
+input[type="checkbox"]:checked + span::after {
+    content: "😺";
+}
+
+/*footer information*/
+
+footer {
+    background-color: plum;
+    color:#62104a;
+    position: sticky;
+    top: 100%;
+    height: 40px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 2px;
+    border: 3px double #62104a;
+}
