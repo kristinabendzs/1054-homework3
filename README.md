@@ -5,14 +5,14 @@ This repo is for homework #3 for class MMED-1054; showcasing personalized to-do 
 No Installation Required.
 
 ## Usage
-No Usage Instructions
+Open index file in your browser :)
 
 ## Contributing
 Fork it!
 Create your feature branch: git checkout -b my-new-feature
 Commit your changes: git commit -am 'Add some feature'
 Push to the branch: git push origin my-new-feature
-Submit a pull request
+Submit a pull request :D
 
 ## History
 April 4, 2024
