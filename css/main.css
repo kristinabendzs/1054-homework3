@@ -65,7 +65,7 @@ section > h2 {
     color:  rgb(22, 86, 35);
 }
 
-#todo > h2 {
+#todo h2 {
     color: rgb(147, 35, 115);
 }
 
@@ -81,7 +81,6 @@ ul {
     list-style-type: none;
     padding: 13px;
     text-align: center;
-    text-transform: uppercase;
 }
 
 #todo ul li {
@@ -107,6 +106,7 @@ ul {
 #completed ul li {
    border: 2px solid rgb(22, 86, 35);
     padding: 5px;
+    text-decoration: line-through;
 }
 
 #completed ul li:nth-child(odd) {
@@ -118,6 +118,11 @@ ul {
 
 input[type="checkbox"]:checked + span::after {
     content: "😺";
+     ;
+}
+
+#completed ul li::before {
+    content: "✅";
 }
 
 /*footer information*/
